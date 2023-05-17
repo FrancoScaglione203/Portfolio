@@ -1,0 +1,47 @@
+:root{
+    --width: 300px;
+}
+
+body{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width);
+}
+
+
+
+.menu 
+{  background-color: #0d10bd; /* Color de fondo del menú */
+   width: 200px; /* Ancho del menú */
+   margin-left: 0; /* Margen izquierdo establecido en 0 */
+   position: fixed;
+   height: 100%;
+   left: 0;
+   top: 0;
+}
+
+ 
+.menu ul {
+   list-style-type: none; /* Elimina los puntos de lista */
+   margin: 0; /* Elimina el margen superior */
+   padding: 0; /* Elimina el padding */
+}
+
+
+.menu li {
+   border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos */
+}
+ 
+.menu li a {
+   display: block; /* Convierte los enlaces en elementos de bloque */
+   padding: 10px; /* Espacio alrededor del texto del enlace */
+   text-decoration: none; /* Elimina el subrayado de los enlaces */
+   color: #333; /* Color del texto del enlace */
+}
+ 
+.menu li a:hover {
+   background-color: #ddd; /* Color de fondo al pasar el ratón */
+}
