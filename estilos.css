@@ -1,47 +1,52 @@
-:root{
-    --width: 300px;
-}
+ .container {
+    display: flex; /* Contenedor principal con flexbox */
+  }
+  
+  .menu {
+    background-color: #020fc0; /* Color de fondo del menú */
+    width: 200px; /* Ancho del menú */
+    height: 100vh; /* Altura del menú que ocupa todo el espacio vertical de la pantalla */
 
-body{
-    background-color: aquamarine;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    padding: 0;
+  }
+  
+  .menu ul {
+    list-style-type: none; /* Elimina los estilos de viñeta de la lista */
+    margin: 0; /* Elimina el margen externo */
+    padding: 0; /* Elimina el relleno interno */
+    display: flex; /* Contenedor del menú con flexbox */
+    flex-direction: column; /* Orienta los elementos en una columna */
+    height: 100%; /* El menú ocupa toda la altura disponible */
+  }
+  
+  .menu li {
+    border-bottom: 1px solid #ccc; /* Línea divisoria entre las opciones del menú */
+    flex-grow: 1; /* Las opciones se expanden para llenar todo el espacio vertical */
+  }
+  
+  .menu li a {
+    display: flex; /* Aplica flexbox al enlace */
+    flex-direction: column; /* Orienta los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 10px; /* Espacio interno para el enlace */
+    text-decoration: none; /* Elimina la decoración de subrayado del enlace */
+    color: #333; /* Color del texto del enlace */
+  }
+  
+  .menu-icon {
+    margin-bottom: 5px; /* Margen inferior para separar el icono del texto */
+  }
+  
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-icon img {
+    width: 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 190px;
+  }
+
+  body {
     margin: 0;
-    margin-left: var(--width);
-}
-
-
-
-.menu 
-{  background-color: #0d10bd; /* Color de fondo del menú */
-   width: 200px; /* Ancho del menú */
-   margin-left: 0; /* Margen izquierdo establecido en 0 */
-   position: fixed;
-   height: 100%;
-   left: 0;
-   top: 0;
-}
-
- 
-.menu ul {
-   list-style-type: none; /* Elimina los puntos de lista */
-   margin: 0; /* Elimina el margen superior */
-   padding: 0; /* Elimina el padding */
-}
-
-
-.menu li {
-   border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos */
-}
- 
-.menu li a {
-   display: block; /* Convierte los enlaces en elementos de bloque */
-   padding: 10px; /* Espacio alrededor del texto del enlace */
-   text-decoration: none; /* Elimina el subrayado de los enlaces */
-   color: #333; /* Color del texto del enlace */
-}
- 
-.menu li a:hover {
-   background-color: #ddd; /* Color de fondo al pasar el ratón */
-}
+  }
