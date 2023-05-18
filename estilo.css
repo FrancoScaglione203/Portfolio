@@ -33,8 +33,42 @@
 
   .foto{
     position: absolute; /* Establece la posición absoluta */
-    top: 50px; /* Ajusta la posición vertical */
-    left: 1015px; /* Ajusta la posición horizontal */
     border-radius: 50%;
     border: 2px solid blue;
+    display: block;
+    margin-top: 100px; /* Margen superior */
+    margin-left: 300px ; /* Margen izquierdo */
+    left: 34.5%; /* Posiciona la imagen en el centro horizontal */
+    width: 300px;
+    height: 300px;
   }
+
+  #presentacion h1 {
+    position: absolute; /* Establece la posición absoluta */
+    margin-left: 300px ; /* Margen izquierdo */
+    font-size: 50px;
+    margin-top: 10px;
+    left: 30%;
+  }
+
+
+  #presentacion h2 {
+    position: absolute; /* Establece la posición absoluta */
+    margin-left: 300px ; /* Margen izquierdo */
+    font-size: 20px;
+    left: 34.5%;
+    top: 50%;
+  }
+
+
+  #presentacion p {
+    position: absolute; /* Establece la posición absoluta */
+    margin-left: 300px ; /* Margen izquierdo */
+    font-size: 20px;
+    left: 25%;
+    top: 65%;
+    text-align: justify;
+    width: 750px;
+  }
+
+
